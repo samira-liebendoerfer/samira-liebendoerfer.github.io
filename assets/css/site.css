@@ -1,0 +1,391 @@
+/* CSS Reset
+    Source: http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Font Import */
+@font-face {
+  font-family: "IBMPlexMono-Regular";
+  src: url("../fonts/IBMPlexMono-Regular.eot");
+  src: url("../fonts/IBMPlexMono-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/IBMPlexMono-Regular.woff2") format("woff2"),
+    url("../fonts/IBMPlexMono-Regular.woff") format("woff"),
+    url("../fonts/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "happy-times-NG_regular_master_web";
+  src: url("../fonts/helvetica-neue-pro-regular.woff2") format("woff2"),
+    url("../fonts/happy-times-NG_regular_master_web.woff") format("woff"),
+    url("../fonts/happy-times-NG_regular_master_web.ttf") format("truetype");
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-family: "happy-times-NG_regular_master_web", Times, "Times New Roman",
+    serif;
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* Links */
+a:focus  {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  /* color: #313ee0; */
+  /* text-decoration: underline; */
+}
+
+.link {
+  text-decoration: underline;
+}
+.link:hover {
+  color: #313ee0;
+}
+
+/* Headlines & Text */
+/* For mobile */
+h1 {
+  font-family: "IBMPlexMono-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  margin: 0;
+}
+h2 {
+  font-family: "IBMPlexMono-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  margin: 0;
+}
+/* For laptop */
+@media only screen and (min-width: 1280px) {
+  h1,
+  h2 {
+    font-size: 35px;
+  }
+}
+
+/* For mobile */
+p {
+  margin: 0;
+}
+.serif {
+  font-family: "happy-times-NG_regular_master_web";
+  font-size: 22px;
+  line-height: 24px;
+}
+.mono {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* For laptop */
+@media only screen and (min-width: 1280px) {
+  .serif {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .mono {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.text-center {
+  margin: 0 20px;
+  margin-top: 65px;
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+/* For Mobile */
+.title-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #313ee0;
+  height: 80px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* For laptop */
+@media only screen and (min-width: 1280px) {
+  .title-left {
+    height: 100px;
+    padding-left: 30px;
+    justify-content: left;
+  }
+}
+
+/* Navigation */
+/* For Mobile */
+nav {
+  height: 80px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: white;
+}
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #313ee0;
+  height: 100%;
+  margin-right: 10px;
+}
+li a {
+  display: block;
+  color: white;
+}
+
+/* For laptop */
+@media only screen and (min-width: 1280px) {
+  nav {
+    height: 100px;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* Main */
+/* For mobile */
+main {
+  margin: 20px 0;
+}
+/* For laptop */
+@media only screen and (min-width: 1280px) {
+  main {
+    margin: 30px 0;
+  }
+}
+
+/* Section */
+/* For mobile */
+.section-margin {
+  margin: 0 20px;
+  overflow: hidden;
+}
+/* For Tablet portrait */
+@media only screen and (min-width: 768px) {
+  .section-margin {
+    margin: 0 18%;
+    overflow: hidden;
+  }
+}
+/* For laptop */
+@media only screen and (min-width: 1280px) {
+  .section-margin {
+    margin: 0 30px;
+  }
+}
+/* For desktop */
+@media only screen and (min-width: 2000px) {
+  .section-margin {
+    margin: 0 calc(100% / 8);
+  }
+}
+
+/* Layout */
+/* For Mobile */
+.section-margin img,
+.section-margin video {
+  width: 100%;
+}
+.intro {
+  height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 60px;
+  font-family: "IBMPlexMono-Regular";
+}
+
+/* For laptop */
+@media only screen and (min-width: 1280px) {
+  .section-margin img,
+  .section-margin video {
+    display: block;
+    margin: 0 auto;
+  }
+  .intro {
+    margin-right: 50%;
+    height: calc(100vh - 180px);
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(6, 1fr); */
+    row-gap: 150px;
+  }
+  .grid-container__center--item-a {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+  .grid-container__left--item-b {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  .grid-container__right--item-c {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+  }
+  .grid-container__center--item-d {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+  }
+  .grid-container__left--item-e {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+  .grid-container__left--item-f {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+  }
+}
