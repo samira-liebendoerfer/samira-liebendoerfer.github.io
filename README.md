@@ -18,3 +18,4 @@ This website was created as an assignment for the course [Web Development with J
 - Build side Projects: 
 1. App to measure the water and air temperature of the river Rhine to go swimming
 2. JavaScript Memory Game
+3. Overview of fonts created by women
