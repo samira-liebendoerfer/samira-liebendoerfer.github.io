@@ -249,7 +249,7 @@ p {
 /* For laptop */
 @media only screen and (min-width: 1280px) {
   .title-left {
-    height: 100px;
+    /* height: 100px; */
     padding-left: 30px;
     justify-content: left;
   }
