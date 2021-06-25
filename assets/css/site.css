@@ -164,7 +164,9 @@ a,
   text-decoration: none;
   color: #313ee0;
 }
-
+a:hover {
+  color: #313ee0c4;
+}
 .arrow {
   height: 25px;
   width: 25px;
@@ -176,7 +178,7 @@ svg {
   animation-iteration-count: infinite;
   animation-name: bounce;
   animation-timing-function: ease-in-out;
-  color: #313ee0;
+  /* color: #313ee0; */
 }
 @keyframes bounce {
   0% {
@@ -192,13 +194,7 @@ svg {
 
 /* Headlines & Text */
 /* For mobile */
-h1 {
-  font-family: "IBMPlexMono-Regular";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  margin: 0;
-}
+h1,
 h2,
 .h2 {
   font-family: "IBMPlexMono-Regular";
@@ -217,17 +213,25 @@ h2,
 }
 
 /* For mobile */
-p {
+p,
+.mono {
+  font-family: "IBMPlexMono-Regular";
   margin: 0;
+  font-size: 16px;
+  line-height: 20px;
 }
+
+.mono p:first-child {
+  text-indent: 0;
+}
+.mono p {
+  text-indent: 2.5em;
+}
+
 .serif {
   font-family: "happy-times-NG_regular_master_web";
   font-size: 22px;
   line-height: 24px;
-}
-.mono {
-  font-size: 16px;
-  line-height: 20px;
 }
 
 /* For laptop */
@@ -236,9 +240,10 @@ p {
     font-size: 35px;
     line-height: 40px;
   }
+  p,
   .mono {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 32px;
   }
 }
 .text-center {
