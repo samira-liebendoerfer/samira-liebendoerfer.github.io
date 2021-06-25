@@ -2,7 +2,7 @@
 
 This website was created as an assignment for the course [Web Development with JavaScript](https://executive-ed.xpro.mit.edu/web-development-javascript "Web Development with JavaScript"). The landing page is an introduction about myself, including a video introduction, profile image, biography and contact. The second page "projects" describes three assignments and provides the links to the GitHub repositories. 
 
-### Features / Projects
+## Features / Projects
 
 - About Page
 - Projects Page
